@@ -110,8 +110,10 @@ Here are a few different ways you may find this information to be labeled when y
 
 
 ***
-## Contributors
+## Appreciations & Contributors
+
 #### Angela Yu  ([@angelabauer](https://github.com/angelabauer))
+<sub>_Much gratitude those of you whose packages include well written documentation and provide examples.<br> It really makes a huge difference to everyone when you care enough about your code to provide those things._</sub>
 
 ***
 ## Enjoy!
