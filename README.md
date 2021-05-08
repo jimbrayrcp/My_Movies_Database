@@ -23,7 +23,7 @@ Your list will be displayed just like one of those internet top 10_ style countd
 
 Change your mind about one move, no problem. You can adjust your rating or even delete the movie entirely. The choice is up to you.
 
-This project was a class assignment in which I took extreme liberty in taking it further than necessary. However, my instructor Angela Yu @angelabauer provided the starter code templates and provided instruction during the course.
+This project was a class assignment in which I took extreme liberty in taking it further than necessary. However, my instructor Angela Yu ([@angelabauer](https://github.com/angelabauer)) provided the starter code templates and provided instruction during the course.
 
 This is the first project for which I have not looked at Angela's completed code. Yet as I am putting this out in public, maybe that wasn't a good idea, 🤨 but it works! 😎
 
@@ -110,8 +110,10 @@ Here are a few different ways you may find this information to be labeled when y
 
 
 ***
+## Contributors
+#### Angela Yu  ([@angelabauer](https://github.com/angelabauer))
 
-
+***
 ## Enjoy!
 
 ## License
