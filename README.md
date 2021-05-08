@@ -77,9 +77,13 @@ I hope you enjoy playing around with this little app as much as I enjoyed making
 >3. Open the console app and type: <br>
 `python3 /<path to your python directory>/movies/main.py`
 <br/>  
-***
-### With Pycharm
-<sub>_As this IDE was used for its creation, Pycharm will be more likely to function correctly if used._</sub><br>
+
+***  
+
+### With Pycharm <br>
+
+<sub>_As this IDE was used for its creation, Pycharm will be more likely to function correctly if used._</sub> <br>  
+
 [_Taken directly from the Pycharm website_](https://www.jetbrains.com/help/pycharm/set-up-a-git-repository.html#put-existing-project-under-Git)
 
 >1. From the main menu, select Git | Clone, or, if no project is currently opened, click Get from VCS on the Welcome screen.
