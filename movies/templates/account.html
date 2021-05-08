@@ -1,0 +1,34 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
+{% set active_page = "account" %}
+{% block title %}Account{% endblock %}
+{% include 'nav.html' %}
+{% block content %}
+
+<div class="content">
+  <h1 class="heading">Your API Key Storage</h1>
+    <p class="description">Add or Edit your API KEY</p>
+   <img src="{{ url_for('static', filename='img/the_movie_database.png') }}" alt="the movie database" width="100" height="125">
+  </div>
+  <div class="content">
+    {{ wtf.quick_form(form, novalidate=True) }}
+  </div>
+  <div class="content">
+    <ol style="margin-top: 20px;"><b>How to get your API KEY</b>>
+      <li>Go to <a href="https://www.themoviedb.org/signup"><span title="Right click and select (open in a new window)">themoviedb</span></a> and sign up for a free account</li>
+      <li>Once account is confirmed ensure you are logged in to your account</li>
+      <li>Hover the profile button (top right toolbar) and click settings</li>
+      <li>In the menu bar to the left, click on API</li>
+      <li>Fill in the form and request your key</li>
+      <li>Once submitted, you should have immediate access to your key</li>
+      <li>Copy your key and paste it here</li>
+    </ol>
+  </div>
+{% endblock %}

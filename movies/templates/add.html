@@ -1,0 +1,37 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
+{% set active_page = "add" %}
+{% block title %}Add Movie{% endblock %}
+{% include 'nav.html' %}
+
+{% block content %}
+<div class="content">
+    <h1 class="heading">Add a Movie</h1>
+    <div class="container space-above ">
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+            {{ wtf.quick_form(form, novalidate=True) }}
+
+                {% with messages = get_flashed_messages(with_categories=true)  %}
+                   {% if messages %}
+                      {% for category, message in messages %}
+                        <p class="{{ category }} flash-warn">
+                            {% for line in message %}
+                                {{line}}<br>
+                                {% endfor %}
+                            </p>
+                      {% endfor %}
+                   {% endif %}
+                {% endwith %}
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
